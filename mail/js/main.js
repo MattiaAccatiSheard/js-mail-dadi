@@ -5,6 +5,18 @@ let arr = ['bello@gmail.com', 'tenero@gmail.com', 'rozzo@gmail.com', 'stanco@gma
 
 btn.addEventListener=(
     'click',
-    //variabili utili
+
+    function () {
+        //variabili utili
+        
+        
+        for (i=0; i<arr; i++){
+            if (mailValue == arr.length) {
+                
+
+            }
+        }
+        
+    }
 
 );
