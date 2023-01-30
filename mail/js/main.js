@@ -1,20 +1,28 @@
-let btn = document.getElementById('btn');
-let mailValue = document.getElementById('usMail').value;
-let arr = ['bello@gmail.com', 'tenero@gmail.com', 'rozzo@gmail.com', 'stanco@gmail.com'];
+const btnaccess = document.getElementById('btn');
+const arr = ["bello@gmail.com", "tenero@gmail.com", "rozzo@gmail.com", "stanco@gmail.com"];
 
 
-btn.addEventListener=(
+btnaccess.addEventListener(
     'click',
-
+    
     function () {
         //variabili utili
+        const mailValue = document.getElementById('usMail').value;
+        console.log(mailValue);
+        let access = false;
         
         
-        for (i=0; i<arr; i++){
-            if (mailValue == arr.length) {
-                
+        for (let i = 0; i < arr.length; i++){
 
+            if (mailValue == arr[i]) {
+                access = true
             }
+        }
+
+        if (access == true){
+            alert("accesso eseguito");
+        }else{
+            alert("accesso non valido");
         }
         
     }
